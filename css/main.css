@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+ul {
+    list-style: none
+}
+
+.main {
+    width: 1440px;
+    margin: auto;
+    border-left: 2px solid #999999;
+    border-right: 2px solid #999999;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header {
+    margin: auto;
+    width: 1440px;
+    border-left: 2px solid #999999;
+    border-right: 2px solid #999999;
+}
+
+.headul > li {
+    float: left;
+    width: auto;
+}
+
+.headul > li:nth-child(1) {
+    padding-right: 220px;
+    margin: 18 0 18 78;
+}
+
+.headul > li:nth-child(n+2):nth-child(-n+6) {
+    color: #006699;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    margin: 23 25 18 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.headul > li:nth-child(n+7) {
+    color: #006699;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    margin: 23 25 18 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.maintext1 {
+    color: #666666;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    margin: 60 0 10 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.mainsubtext1 {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin: 0 0 40 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.boxtext1 {
+    width: 250px;
+    height: 48px;
+    background: #3399cc;
+    margin: auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.boxtext1:hover {
+    width: 250px;
+    height: 48px;
+    background: white;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin-bottom: 27px;
+    border: 1px solid black;
+}
+
+.main2 {
+    margin: auto;
+    position: relative;
+}
+
+.slider {
+    height: 50%;
+}
+
+.banbox {
+    margin: auto;
+    position: relative;
+}
+
+.banwrap {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+.bantext {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    margin: 0 0 0 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+
+
+.mainwrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.maintext2 {
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    margin: 0 0 10 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.mainsubtext2 {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin: 0 0 22 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.boxtext2 {
+    width: 250px;
+    height: 48px;
+    background: #3399cc;
+    margin: auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.boxtext2:hover {
+    width: 250px;
+    height: 48px;
+    background: white;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: center;
+    border: 1px solid black;    
+}
+
+.main3-25 {
+    width: 25%;
+    height: auto;
+    float: left;
+}
+
+.main3-50 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.main3-75 {
+    width: 75%;
+    height: auto;
+    float: left;
+    padding: 109 0 109 0;
+}
+
+.main3-75 > p:nth-child(1) {
+    margin: auto;
+    color: #666666;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+}
+
+.main3-75 > p:nth-child(2) {
+    margin: auto;
+    color: #666666;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.main3box {
+    margin: auto;
+    position: relative;
+
+}
+
+.main3wrap-eco {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    height: 20%;
+    color: white;
+    background: rgba(0, 0, 0, 0.33);
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-align: left;
+    padding: 20 20 10 10;
+}
+
+.main3wrap {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    height: 20%;
+    color: white;
+    background: rgba(0, 204, 255, 0.33);
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-align: left;
+    padding: 20 20 10 10;
+}
+
+.main3wrap-ex {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    height: 20%;
+    color: white;
+    background: rgba(0, 204, 255, 0.33);
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-align: left;
+    padding: 50 20 10 10;
+}
+
+.main3wrap-w {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    height: 20%;
+    color: white;
+    background: rgba(0, 204, 255, 1);
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-align: left;
+    padding: 20 20 10 10;
+}
+
+.main3boxtext {
+    float: left;
+    width: 80%;
+
+}
+
+.main3boxicon {
+    text-align: right;
+    float: right;
+    padding-top: 4px;
+}
+
+.main4 {
+    position: relative;
+    margin: auto;
+}
+
+.main4wrap {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%)
+}
+
+.main4wrap > p:first-child {
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    margin: 0 0 10 0;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.main4wrap > p:last-child {
+    width: 250px;
+    height: 48px;
+    background: #3399cc;
+    margin: auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.main4wrap > p:last-child:hover {
+    width: 250px;
+    height: 48px;
+    background: white;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+footer {
+    width: 1440px;
+    margin: auto;
+    border-left: 2px solid #999999;
+    border-right: 2px solid #999999;
+}
+
+.gray75 {
+    height: 75px;
+    background: #343434;
+}
+
+.foot512 {
+    height: 512px;
+    background: #252525;
+    padding: 20px 140px 0 140px;
+}
+
+.footul {
+    list-style: none;
+    float: left;
+    width: 20%;
+}
+
+.footul > li:first-child {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.07em;
+    line-height: 60px;
+}
+
+.footul > li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+    letter-spacing: 0.07em;
+    line-height: 30px;
+}
+
+.superfoot {
+    height: 100px;
+    color: white;
+    background: #1b394e;
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    font-weight: 400px;
+    padding: 30px 40px 0 40px;
+}
+
+.follow {
+    float: left;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.ficon {
+    float: left;
+    width: 40px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.footer {
+    width: 1440px;
+    height: 120px;
+    background: white;
+    margin: auto;
+
+}
+
+.sufoot {
+    color: #999999;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    list-style: none;
+    padding: 40px 40px 0 40px;
+}
+
+
+.sufoot > li {
+    float: left;
+    padding-right: 0 20px 25px 0;
+}
+
+
+.sufoot1 {
+    color: #999999;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    list-style: none;
+    padding: 25px 40px 0 40px;
+}

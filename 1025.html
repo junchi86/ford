@@ -1,0 +1,353 @@
+<DOCTYPE! html>
+    <html lang="ko">
+    
+    <head>
+        <title>기본레이아웃 실습 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-1.12.4.js"></script>
+
+        <link href="http://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="css/xeicon.css" rel="stylesheet" type="text/css">
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            hr {
+                margin: 10px 0;
+            }
+
+            ul,
+            ol {
+                list-style: none;
+            }
+
+            .test_box1 {
+                display: block;
+                text-align: center;
+                line-height: 200px;
+                font-size: 40px;
+                background: #ddd;
+                text-transform: uppercase;
+            }
+
+            .test_box2 {
+                display: block;
+                text-align: center;
+                line-height: 200px;
+                font-size: 40px;
+                background: #eee;
+                text-transform: uppercase;
+            }
+
+            .test_box3 {
+                display: block;
+                text-align: center;
+                line-height: 200px;
+                font-size: 40px;
+                background: #ccc;
+                text-transform: uppercase;
+            }
+
+            html body {
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+
+            #header {
+                background: #ddd;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                font-weight: 900;
+                font-size: 30px;
+            }
+
+            #nav {
+                width: 1200px;
+                margin: 0 auto;
+            }
+
+            #nav ul li {
+                float: left;
+                width: 16.666%;
+                border-left: 1px solid #ddd;
+            }
+
+            #nav ul li:first-child {
+                border-left: 0;
+            }
+
+            #nav ul li a {
+                display: block;
+                padding: 20px 0;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            #main_visual {
+                height: 500px;
+                text-align: center;
+                background: #999;
+                line-height: 500px;
+                color: #fff;
+                font-weight: 900;
+                font-size: 60px;
+                text-transform: uppercase;
+            }
+
+            #main_contents {
+                width: 1200px;
+                margin: 20px auto;
+            }
+
+            .img-responsive {
+                width: 100%;
+                height: auto;
+                border: 0;
+                display: block;
+                vertical-align: bottom;
+            }
+
+            #footer {
+                height: 200px;
+                padding: 20px 0 30px 0;
+                border-top: 1px solid #ddd;
+                background: #eee;
+            }
+
+            #footer > div {
+                width: 1200px;
+                margin: 0 auto;
+            }
+
+            .show_mobile {
+                display: none;
+            }
+
+            .m_gnb_open {
+                display: none;
+            }
+
+            .m_gnb_close {
+                display: none;
+            }
+
+            .col-md-3 {
+                float: left;
+                width: 25%;
+            }
+
+            .col-md-4 {
+                float: left;
+                width: 33.333%;
+            }
+
+            .col-md-9 {
+                float: left;
+                width: 75%;
+            }
+
+            @media (max-width:1200px) {
+                #nav {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    background: #fff;
+                }
+
+                #main_contents {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                #footer > div {
+                    width: 100%; margin:0 auto;
+                    padding: 20px 15px 30px 15px;
+                }
+            }
+
+            @media (max-width:768px) {
+                #nav {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    background: #fff;
+                }
+
+                #nav ul li {
+                    width: 100%;
+                    margin: 0 auto;
+                    border-left: 0px solid #ddd;
+                    border-top: 1px solid #ddd;
+                }
+
+                #nav ul li:last-child {
+                    border-bottom: 3px solid #ddd;
+                }
+
+                #main_visual {
+                    height: 300px;
+                    text-align: center;
+                    background: #999;
+                    line-height: 60px;
+                    color: #fff;
+                    font-weight: 900;
+                    font-size: 60px;
+                    text-transform: uppercase;
+                    padding: 90px 0;
+                }
+
+                #main_contents {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                #footer {
+                    height: auto;
+                }
+
+                #footer > div {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 20px 15px 30px 15px;
+                }
+
+                .small_logo {
+                    display: none;
+                }
+
+
+                .m_gnb_open {
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                }
+
+                .m_gnb_close {
+                    display: block;
+                    text-align: right;
+                    padding: 20px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .show_mobile {
+                    display: block;
+                }
+
+                .col-md-3 {
+                    float: left;
+                    width: 100%;
+                }
+
+
+                .col-md-4 {
+                    float: left;
+                    width: 100%;
+                }
+
+
+                .col-md-9 {
+                    float: left;
+                    width: 100%;
+                }
+
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header id="header"><a href="../index.html">logo</a></header>
+
+        <!--        위대한 김주석:네비게이센 gnb의 시작-->
+
+        <div class="m_gnb_open"><i class="xi-bars"></i></div>
+        <nav id="nav">
+            <div class="m_gnb_close"><i class="xi-close"></i></div>
+
+            <ul class="clearfix">
+                <li><a href="#">menu01</a></li>
+                <li><a href="#">menu02</a></li>
+                <li><a href="#">menu03</a></li>
+                <li><a href="#">menu04</a></li>
+                <li><a href="#">menu05</a></li>
+                <li><a href="#">menu06</a></li>
+            </ul>
+        </nav>
+
+        <!--        위대한 김주석:네비게이센 gnb의 끝-->
+        <section id="main_visual">main visual</section>
+
+        <section id="main_contents" class="clearfix">
+            <div class="col-md-4">
+                <div class="test_box1">a</div>
+            </div>
+            <div class="col-md-4">
+                <div class="test_box2">b</div>
+            </div>
+            <div class="col-md-4">
+                <div class="test_box3">c</div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="clearfix">
+                <div class="col-md-3 small_logo">small logo</div>
+                <div class="col-md-9">
+                    대 표 : 이창훈 <br class="show_mobile">
+                    사업자등록번호 : 607-09-00000 <br class="show_mobile">
+                    부산광역시 북구 상리로 83
+                    <hr>
+                    Tel : 051-783-0000 <br class="show_mobile">
+                    hp : 010-6456-0000 <br class="show_mobile">
+                    e-mail : <a href="mailto:sipossa@naver.com">sipossa@naver.com</a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(".m_gnb_open").on("click", function() {
+                //$("#nav").show();
+                $("#nav").slideDown();
+            });
+            $(".m_gnb_close").on("click", function() {
+                //$("#nav").hide();
+                $("#nav").slideUp();
+            });
+        </script>
+    </body>
+
+    </html>
